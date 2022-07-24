@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AB45968288D80A300A1F5D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AB4596A288D80A300A1F5D3 /* Localizable.strings */; };
+		4AB4596D288D889F00A1F5D3 /* MyTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4596C288D889F00A1F5D3 /* MyTextModifier.swift */; };
 		4AEB4ACF288CF9E40091E147 /* StarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB4ACE288CF9E40091E147 /* StarApp.swift */; };
 		4AEB4AD1288CF9E40091E147 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB4AD0288CF9E40091E147 /* ContentView.swift */; };
 		4AEB4AD3288CF9E50091E147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AEB4AD2288CF9E50091E147 /* Assets.xcassets */; };
@@ -14,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AB45969288D80A300A1F5D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4AB4596B288D80E500A1F5D3 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4AB4596C288D889F00A1F5D3 /* MyTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextModifier.swift; sourceTree = "<group>"; };
 		4AEB4ACB288CF9E40091E147 /* Star.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Star.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEB4ACE288CF9E40091E147 /* StarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarApp.swift; sourceTree = "<group>"; };
 		4AEB4AD0288CF9E40091E147 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +58,8 @@
 			children = (
 				4AEB4ACE288CF9E40091E147 /* StarApp.swift */,
 				4AEB4AD0288CF9E40091E147 /* ContentView.swift */,
+				4AB4596C288D889F00A1F5D3 /* MyTextModifier.swift */,
+				4AB4596A288D80A300A1F5D3 /* Localizable.strings */,
 				4AEB4AD2288CF9E50091E147 /* Assets.xcassets */,
 				4AEB4AD4288CF9E50091E147 /* Preview Content */,
 			);
@@ -109,6 +116,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 4AEB4AC2288CF9E40091E147;
 			productRefGroup = 4AEB4ACC288CF9E40091E147 /* Products */;
@@ -126,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AEB4AD6288CF9E50091E147 /* Preview Assets.xcassets in Resources */,
+				4AB45968288D80A300A1F5D3 /* Localizable.strings in Resources */,
 				4AEB4AD3288CF9E50091E147 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,16 +148,30 @@
 			files = (
 				4AEB4AD1288CF9E40091E147 /* ContentView.swift in Sources */,
 				4AEB4ACF288CF9E40091E147 /* StarApp.swift in Sources */,
+				4AB4596D288D889F00A1F5D3 /* MyTextModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4AB4596A288D80A300A1F5D3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AB45969288D80A300A1F5D3 /* en */,
+				4AB4596B288D80E500A1F5D3 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4AEB4AD7288CF9E50091E147 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -210,6 +233,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
